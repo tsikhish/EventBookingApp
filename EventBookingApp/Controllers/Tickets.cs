@@ -19,10 +19,11 @@ namespace EventBookingApp.Controllers
             _personContext = personContext;
             _ticketService = ticketService;
         }
+        [HttpPost()]
         [HttpPost("/events/{event-id}/book")]
-        public async Task<IActionResult> TicketBooking(int bookedtkt,TicketDto tickets)
+        public async Task<IActionResult> TicketBooking(TicketDto tickets)
         {
-            var newTickets =await _ticketService.TicketBooking(bookedtkt,tickets);
+            var newTickets =await _ticketService.TicketBooking(tickets);
             return Ok(newTickets);
         }
 

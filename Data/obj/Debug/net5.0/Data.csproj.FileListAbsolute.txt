@@ -16,3 +16,4 @@ C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\refint\Data.dll
 C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\Data.pdb
 C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\Data.genruntimeconfig.cache
 C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\ref\Data.dll
+C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\Data.sourcelink.json

@@ -8,8 +8,7 @@ namespace Domain.Post
 {
     public class TicketDto
     {
-        public int BookedTicketId {  get; set; }
         public string EventName { get; set; }
-        public int currentBookint { get; set; }
+        public int DesiredTicket { get; set; }
     }
 }

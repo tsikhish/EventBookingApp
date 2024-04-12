@@ -3,13 +3,15 @@ using Domain;
 using Domain.Post;
 using EventBookingApp.Validations;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace EventBookingApp.Services
 {
     public interface ITicketService
     {
-        public Task<Tickets> TicketBooking(int bookedtkt, TicketDto ticketDto);
+        public Task<Tickets> TicketBooking(TicketDto ticket);
 
     }
     public class TicketsService:ITicketService
@@ -19,34 +21,37 @@ namespace EventBookingApp.Services
         {
             _personContext=personContext;
         }
-        public async Task<Tickets> TicketBooking(int bookedtkt,TicketDto ticketDto)
+        public async Task<Tickets> TicketBooking(TicketDto ticket)
         {
-            await ValidateTickets(ticketDto);
-            var existingEvent = await _personContext.CreateEvent.FirstOrDefaultAsync(x => x.EventName == ticketDto.EventName);
+            var existingEvent = await _personContext.CreateEvent.FirstOrDefaultAsync(x => x.EventName == ticket.EventName);
             if (existingEvent == null)
             {
-                throw new System.Exception($"{existingEvent} doesnt exists");
+                throw new ArgumentException($"{existingEvent} doesnt exists");
             }
-            var bookedticket= await _personContext.Tickets.FirstOrDefaultAsync(x => x.BookedTickedId == bookedtkt);
-            if(bookedticket != null)
+            var existingPlace = await _personContext.Tickets.FirstOrDefaultAsync(x => x.Id == ticket.DesiredTicket);
+            if(existingPlace == null || existingPlace.EventName!=ticket.EventName) 
             {
-                throw new System.Exception($"Unfortunately your ticket {bookedticket} is already booked");
+                throw new ArgumentException($"{existingPlace} doesnt exists");
             }
-            var availableTickets = existingEvent.MaxBooking;
-            if (availableTickets == 0)
+            if (existingPlace.Count!= 0)
             {
-                throw new System.Exception($"Tickets are sold out");
+                throw new InvalidOperationException($"Unfortunately your ticket {existingPlace} is already booked");
             }
-            var newTickets = new Tickets
+            if (existingPlace.MaxBooking == 0)
             {
-                BookedTickedId= bookedtkt,
-                EventId = existingEvent.Id,
-                EventName = existingEvent.EventName,
-                Count = availableTickets--,
-            };
-            await _personContext.Tickets.AddAsync(newTickets);
+                throw new InvalidOperationException($"Tickets are sold out");
+            }
+            var ticketsForEvent = await _personContext.Tickets.Where(x => x.EventName == ticket.EventName).ToListAsync();
+            foreach (var ticketForEvent in ticketsForEvent)
+            {
+                ticketForEvent.MaxBooking = existingPlace.MaxBooking--;
+            }
+            existingPlace.Count++;
+            _personContext.UpdateRange(ticketsForEvent);
+            _personContext.Update(existingPlace);
             await _personContext.SaveChangesAsync();
-            return newTickets;
+
+            return existingPlace;
         }
         private async Task ValidateTickets(TicketDto ticketDto)
         {

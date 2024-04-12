@@ -67,3 +67,4 @@ C:\Users\Mari\source\repos\EventBookingApp\EventBookingApp\obj\Debug\net5.0\Even
 C:\Users\Mari\source\repos\EventBookingApp\EventBookingApp\obj\Debug\net5.0\EventBookingApp.genruntimeconfig.cache
 C:\Users\Mari\source\repos\EventBookingApp\EventBookingApp\obj\Debug\net5.0\ref\EventBookingApp.dll
 C:\Users\Mari\source\repos\EventBookingApp\EventBookingApp\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\Mari\source\repos\EventBookingApp\EventBookingApp\obj\Debug\net5.0\EventBookingApp.sourcelink.json
