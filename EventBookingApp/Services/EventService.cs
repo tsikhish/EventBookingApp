@@ -39,6 +39,19 @@ namespace EventBookingApp.Services
                 MaxBooking = createEventDto.MaxBooking,
                 Created=DateTime.Now,
             };
+            if (newEvent.MaxBooking > 0)
+            {
+                for (int i = 0; i < newEvent.MaxBooking; i++)
+                {
+                    var availableTickets = new Tickets
+                    {
+                        EventId = existingEvent.Id,
+                        EventName = existingEvent.EventName,
+                        Count = 0,
+                    };
+                    _personContext.Tickets.Add(availableTickets);
+                }
+            }
             await _personContext.AddAsync(newEvent);
             await _personContext.SaveChangesAsync();
             return newEvent;
