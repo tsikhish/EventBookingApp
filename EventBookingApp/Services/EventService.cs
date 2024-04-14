@@ -15,7 +15,7 @@ namespace EventBookingApp.Services
         public Task<CreateEvent> CreateEvent(CreateEventDto createEventDto);
         public Task<string> DeleteEvent(string username);
         public  Task<CreateEvent> UpdateEvent(string username, CreateEventDto createEventDto);
-
+        public Task<CreateEvent> SearchEvent(string EventName);
     }
     public class EventService:IEventService
     {
@@ -37,22 +37,25 @@ namespace EventBookingApp.Services
                 EventName = createEventDto.EventName,
                 Location = createEventDto.Location,
                 MaxBooking = createEventDto.MaxBooking,
-                Created=DateTime.Now,
+                Created=DateTime.Now,   
             };
-            if (newEvent.MaxBooking > 0)
+
+            await _personContext.AddAsync(newEvent);
+            await _personContext.SaveChangesAsync();
+            if (createEventDto.MaxBooking > 0)
             {
-                for (int i = 0; i < newEvent.MaxBooking; i++)
+                for (int i = 0; i < createEventDto.MaxBooking; i++)
                 {
                     var availableTickets = new Tickets
                     {
-                        EventId = existingEvent.Id,
-                        EventName = existingEvent.EventName,
+                        EventId = newEvent.Id,
+                        EventName = newEvent.EventName,
                         Count = 0,
+                        MaxBooking=newEvent.MaxBooking,
                     };
                     _personContext.Tickets.Add(availableTickets);
                 }
             }
-            await _personContext.AddAsync(newEvent);
             await _personContext.SaveChangesAsync();
             return newEvent;
         }
@@ -79,6 +82,15 @@ namespace EventBookingApp.Services
             existingEvent.Created = DateTime.Now;
             _personContext.Update(existingEvent);
             _personContext.SaveChanges();
+            return existingEvent;
+        }
+        public async Task<CreateEvent> SearchEvent(string EventName) 
+        {
+            var existingEvent = await _personContext.CreateEvent.FirstOrDefaultAsync(x => x.EventName == EventName);
+            if (existingEvent == null)
+            {
+                throw new Exception($"{existingEvent} doesnt exist");
+            }
             return existingEvent;
         }
         private async Task ValidateEvent(CreateEventDto createEventDto) 
