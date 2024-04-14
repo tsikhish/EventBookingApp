@@ -67,5 +67,19 @@ namespace EventBookingApp.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [AllowAnonymous]
+        [HttpGet("/events")]
+        public async Task<IActionResult> SearchAnyEvent(string EventName)
+        {
+            try
+            {
+                var existingEvent = await _eventService.SearchEvent(EventName);
+                return Ok(existingEvent);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

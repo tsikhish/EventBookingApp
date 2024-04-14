@@ -14,6 +14,6 @@ namespace Domain
         public int Count { get; set; }
         public int MaxBooking { get;set; }
         public ICollection<CreateEvent> CreateEvents { get; set; }
-        public AppUser AppUser { get; set; }
+        public string AppUserId { get; set; }
     }
 }
