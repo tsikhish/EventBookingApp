@@ -53,6 +53,9 @@ namespace EventBookingApp.Migrations
                     b.Property<string>("EventName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("EventTime")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Location")
                         .HasColumnType("nvarchar(max)");
 
@@ -93,6 +96,9 @@ namespace EventBookingApp.Migrations
 
                     b.Property<int>("MaxBooking")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("TimeOfEvent")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 

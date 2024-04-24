@@ -6,6 +6,7 @@ using EventBookingApp.Validations;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Security.Claims;
@@ -18,10 +19,12 @@ namespace EventBookingApp.Controllers
     {
         private readonly PersonContext _personcontext;
         private readonly IEventService _eventService;
-        public Event(PersonContext personcontext,IEventService eventService)
+        private readonly ILogger<Event> _logger;
+        public Event(PersonContext personcontext,IEventService eventService,ILogger<Event> logger)
         {
             _personcontext = personcontext;
             _eventService = eventService;
+            _logger = logger;
         }
 
         [Authorize(Roles = Domain.Role.Accountant)]
@@ -35,7 +38,8 @@ namespace EventBookingApp.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                _logger.LogError(ex, "An error occurred while processing the request for event creation.");
+                return BadRequest("An error occurred while processing your request. Please try again later.");
             }
         }
         [Authorize(Roles = Domain.Role.Accountant)]
@@ -49,7 +53,8 @@ namespace EventBookingApp.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                _logger.LogError(ex, "An error occurred while processing the request for deleting event.");
+                return BadRequest("An error occurred while processing your request. Please try again later.");
             }
         }
         [Authorize(Roles = Domain.Role.Accountant)]
@@ -64,7 +69,9 @@ namespace EventBookingApp.Controllers
             }
             catch(Exception ex)
             {
-                return BadRequest(ex.Message);
+                _logger.LogError(ex, "An error occurred while processing the request for updating event.");
+                return BadRequest("An error occurred while processing your request. Please try again later.");
+
             }
         }
         [AllowAnonymous]
@@ -78,7 +85,9 @@ namespace EventBookingApp.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                _logger.LogError(ex, "An error occurred while processing the request for searching event.");
+                return BadRequest("An error occurred while processing your request. Please try again later.");
+
             }
         }
     }

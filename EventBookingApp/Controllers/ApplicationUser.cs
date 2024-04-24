@@ -1,4 +1,5 @@
 ﻿using Data;
+using Domain;
 using Domain.Post;
 using EventBookingApp.AppSettings;
 using EventBookingApp.Services;
@@ -21,23 +22,23 @@ namespace EventBookingApp.Controllers
         private readonly PersonContext _personcontext;
         private readonly AppSetting _appsettings;
         private readonly IUserServices _userservice;
-        public ApplicationUser(IUserServices userservice,PersonContext personcontext, IOptions<AppSetting> appsettings)
+        public ApplicationUser(IUserServices userservice, PersonContext personcontext, IOptions<AppSetting> appsettings)
         {
-            _personcontext=personcontext;
-            _appsettings=appsettings.Value;
-            _userservice=userservice;
+            _personcontext = personcontext;
+            _appsettings = appsettings.Value;
+            _userservice = userservice;
         }
         [HttpPost("/applicationuser/registration")]
-        public async Task<IActionResult> RegisterUser([FromBody]UserRegistration user)
+        public async Task<IActionResult> RegisterUser([FromBody] UserRegistration user)
         {
             try
             {
-               var newUser=await _userservice.Register(user);
-               return Ok($"{newUser.UserName} registered successfully");
+                var newUser = await _userservice.Register(user);
+                return Ok($"{newUser.UserName} registered successfully");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                return BadRequest($"An error occurred: {ex.Message}");
+                return BadRequest(ex.Message);
             }
         }
         [HttpPost("/user/login")]
@@ -46,28 +47,13 @@ namespace EventBookingApp.Controllers
             try
             {
                 var token = await _userservice.Login(loginUser);
-                var existingPerson = await _personcontext.AppUser.FirstOrDefaultAsync(x => x.UserName == loginUser.UserName);
-                if (token != null)
-                {
-                    return Ok(
-                        new
-                        {
-                            Id = existingPerson.Id,
-                            Username = existingPerson.UserName,
-                            Role = existingPerson.Role,
-                            Token = token,
-                        }
-                        );
-                }
-                else
-                {
-                    return Unauthorized($"{loginUser.UserName} is not authorized");
-                }
+                return Ok(token);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest($"{ex.Message}");
             }
         }
+
     }
 }

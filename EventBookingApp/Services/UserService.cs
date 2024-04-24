@@ -20,25 +20,26 @@ namespace EventBookingApp.Services
     public interface IUserServices
     {
         public Task<AppUser> Register([FromBody] UserRegistration user);
-        public Task<string> Login([FromBody]  LoginUser loginUser);
+        public Task<string> Login([FromBody] LoginUser loginUser);
     }
 
     public class UserService : IUserServices
     {
         private readonly PersonContext _personcontext;
         private readonly AppSetting _appsetting;
-        public UserService(PersonContext personcontext, IOptions<AppSetting> appsetting) 
-        { 
-            _personcontext=personcontext;
-            _appsetting=appsetting.Value;
+        public UserService(PersonContext personcontext, IOptions<AppSetting> appsetting)
+        {
+            _personcontext = personcontext;
+            _appsetting = appsetting.Value;
         }
+
         public async Task<AppUser> Register([FromBody] UserRegistration user)
         {
             await ValidateRegistration(user);
             var existingUser = await _personcontext.AppUser.FirstOrDefaultAsync(x => x.UserName == user.UserName);
             if (existingUser != null)
             {
-                throw new System.Exception($"{existingUser.UserName}already exists");
+                throw new Exception($"Already exists.");
             }
             string hashedPassword = BCrypt.Net.BCrypt.HashPassword(user.Password);
             var newUser = new Domain.AppUser
@@ -51,6 +52,7 @@ namespace EventBookingApp.Services
             await _personcontext.SaveChangesAsync();
             return newUser;
         }
+
         public async Task<string> Login([FromBody] LoginUser loginUser)
         {
             await ValidateLogin(loginUser);
@@ -62,7 +64,7 @@ namespace EventBookingApp.Services
             var existingPerson = await _personcontext.AppUser.FirstOrDefaultAsync(x => x.UserName == loginuser.UserName);
             if (existingPerson == null || !BCrypt.Net.BCrypt.Verify(loginuser.Password, existingPerson.Password))
             {
-                throw new Exception($"{existingPerson} is null or {loginuser.Password} is not correct, please check it");
+                throw new SystemException($"Your Account doesnt exists or Password is not correct, please check it");
             }
 
             var authClaims = new List<Claim>()
@@ -98,11 +100,11 @@ namespace EventBookingApp.Services
         private async Task ValidateLogin([FromBody] LoginUser loginuser)
         {
             var validator = new LoginValidator();
-            var valid =await validator.ValidateAsync(loginuser);
+            var valid = await validator.ValidateAsync(loginuser);
             var errorMessage = "";
-            if(!valid.IsValid)
+            if (!valid.IsValid)
             {
-                foreach(var item in valid.Errors)
+                foreach (var item in valid.Errors)
                 {
                     errorMessage += item.ErrorMessage + " , ";
                 }
