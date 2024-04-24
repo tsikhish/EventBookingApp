@@ -43,12 +43,12 @@ namespace EventBookingApp
             services.AddCors();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Final", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "EventBookingApp", Version = "v1" });
             });
             var appsettingsSection = Configuration.GetSection("AppSettings");
             services.Configure<AppSetting>(appsettingsSection);
             var appSettings = appsettingsSection.Get<AppSetting>();
-            var key = Encoding.ASCII.GetBytes(appSettings.Secret);
+            var key = Encoding.ASCII.GetBytes(appSettings.Secret);  
             services.AddAuthentication(x =>
             {   
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -70,6 +70,8 @@ namespace EventBookingApp
             services.AddScoped<IUserServices, UserService>();
             services.AddScoped<IEventService, EventService>();  
             services.AddScoped<ITicketService,TicketsService>();
+            services.AddLogging();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

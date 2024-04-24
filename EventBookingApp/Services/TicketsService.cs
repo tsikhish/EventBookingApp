@@ -69,7 +69,7 @@ namespace EventBookingApp.Services
             var availableTickets= await _personContext.Tickets.Where(x=>x.Count==0).ToListAsync();
             if(!availableTickets.Any())
             {
-                throw new Exception($"Available tickets is not found");
+                throw new System.Exception($"Available tickets is not found");
             }
             var ticketInfoList = availableTickets.Select(t => $"Event: {t.EventName}, Tickets: {t.Id}");
             var ticketInfo = string.Join("\n", ticketInfoList);
@@ -80,15 +80,15 @@ namespace EventBookingApp.Services
             var existingTickets = await _personContext.Tickets.FirstOrDefaultAsync(x => x.Id == id);
             if(existingTickets== null)
             {
-                throw new Exception($"{existingTickets} doesn't exist");
+                throw new SystemException($"{existingTickets} doesn't exist");
             }
             if (existingTickets.Count == 0)
             {
-                throw new Exception($"{existingTickets} was not booked and can not be cancelled");
+                throw new SystemException($"{existingTickets} was not booked and can not be cancelled");
             }
             if(existingTickets.AppUserId!=userId)
             {
-                throw new Exception($"{userId} can not cancel other persons tickets");
+                throw new SystemException($"{userId} can not cancel other persons tickets");
             }
             var ticketsForEvent = await _personContext.Tickets.Where(x => x.EventName == existingTickets.EventName).ToListAsync();
             foreach (var item in ticketsForEvent)

@@ -12,6 +12,7 @@ namespace Domain
         public string EventName {  get; set; }
         public string Location { get; set; }
         public DateTime Created { get; set; } = DateTime.Now;
+        public DateTime EventTime { get; set; }
         public int MaxBooking {  get; set; }
         public Tickets Tickeets { get; set; }
     }

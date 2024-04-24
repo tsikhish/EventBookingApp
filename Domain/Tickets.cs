@@ -13,6 +13,7 @@ namespace Domain
         public string EventName { get; set; }
         public int Count { get; set; }
         public int MaxBooking { get;set; }
+        public DateTime TimeOfEvent {  get; set; }
         public ICollection<CreateEvent> CreateEvents { get; set; }
         public string AppUserId { get; set; }
     }

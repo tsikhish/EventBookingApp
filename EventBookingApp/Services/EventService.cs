@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace EventBookingApp.Services
@@ -14,15 +15,15 @@ namespace EventBookingApp.Services
     {
         public Task<CreateEvent> CreateEvent(CreateEventDto createEventDto);
         public Task<string> DeleteEvent(string username);
-        public  Task<CreateEvent> UpdateEvent(string username, CreateEventDto createEventDto);
+        public Task<CreateEvent> UpdateEvent(string username, CreateEventDto createEventDto);
         public Task<CreateEvent> SearchEvent(string EventName);
     }
-    public class EventService:IEventService
+    public class EventService : IEventService
     {
         private readonly PersonContext _personContext;
         public EventService(PersonContext personContext)
         {
-            _personContext=personContext;   
+            _personContext = personContext;
         }
         public async Task<CreateEvent> CreateEvent(CreateEventDto createEventDto)
         {
@@ -37,7 +38,7 @@ namespace EventBookingApp.Services
                 EventName = createEventDto.EventName,
                 Location = createEventDto.Location,
                 MaxBooking = createEventDto.MaxBooking,
-                Created=DateTime.Now,   
+                Created = DateTime.Now,
             };
 
             await _personContext.AddAsync(newEvent);
@@ -51,7 +52,7 @@ namespace EventBookingApp.Services
                         EventId = newEvent.Id,
                         EventName = newEvent.EventName,
                         Count = 0,
-                        MaxBooking=newEvent.MaxBooking,
+                        MaxBooking = newEvent.MaxBooking,
                     };
                     _personContext.Tickets.Add(availableTickets);
                 }
@@ -61,7 +62,7 @@ namespace EventBookingApp.Services
         }
         public async Task<string> DeleteEvent(string username)
         {
-            var existingEvent =await _personContext.CreateEvent.FirstOrDefaultAsync(x => x.EventName == username);
+            var existingEvent = await _personContext.CreateEvent.FirstOrDefaultAsync(x => x.EventName == username);
             if (existingEvent == null)
             {
                 throw new System.Exception($"{existingEvent.EventName} doesnt exists");
@@ -84,16 +85,16 @@ namespace EventBookingApp.Services
             _personContext.SaveChanges();
             return existingEvent;
         }
-        public async Task<CreateEvent> SearchEvent(string EventName) 
+        public async Task<CreateEvent> SearchEvent(string EventName)
         {
             var existingEvent = await _personContext.CreateEvent.FirstOrDefaultAsync(x => x.EventName == EventName);
             if (existingEvent == null)
             {
-                throw new Exception($"{existingEvent} doesnt exist");
+                throw new System.Exception($"{existingEvent} doesnt exist");
             }
             return existingEvent;
         }
-        private async Task ValidateEvent(CreateEventDto createEventDto) 
+        private async Task ValidateEvent(CreateEventDto createEventDto)
         {
             var validator = new CreateEventValidator();
             var validationResult = await validator.ValidateAsync(createEventDto);
