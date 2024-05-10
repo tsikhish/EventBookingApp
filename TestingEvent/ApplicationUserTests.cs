@@ -4,6 +4,7 @@ using Domain.Post;
 using EventBookingApp.AppSettings;
 using EventBookingApp.Controllers;
 using EventBookingApp.Services;
+using EventBookingApp.Validations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -32,7 +33,7 @@ namespace TestingEvent
             _applicationUser = new ApplicationUser(_userServicesMock.Object, _dbContextMock.Object, Mock.Of<IOptions<AppSetting>>());
         }
         [Fact]
-        public async void RegisterPerson_ReturnsOk()
+        public async void Register_NewUser_ReturnsOk()
         {
             //Arrange
             var registerPerson = FakeUser();
@@ -58,6 +59,29 @@ namespace TestingEvent
             Assert.Equal("Already exists.", badRequest.Value);
         }
         [Fact]
+        public async Task ValidateRegistration_InvalidUser_ExceptionThrownWithErrorMessage()
+        {
+            // Arrange
+            var user = new UserRegistration
+            {
+                UserName = "",
+                Password = "",
+                Role = ""
+            };
+            var existingUser = new AppUser { UserName = user.UserName, Password = user.Password, Role = user.Role };
+            _userServicesMock.Setup(service => service.Register(It.IsAny<UserRegistration>()))
+                 .ThrowsAsync(new Exception("username should be filled, Password should be filled, Rule should be filled"));
+
+            // Act
+            var result = await _applicationUser.RegisterUser(FakeUser());
+
+            // Assert
+            var badRequest = Assert.IsType<BadRequestObjectResult>(result);
+            Assert.Equal("username should be filled, Password should be filled, Rule should be filled", badRequest.Value);
+        }
+    
+    
+    [Fact]
         public async void LoginExistingPerson_ReturnsOk()
         {
             //Arrange
@@ -84,7 +108,27 @@ namespace TestingEvent
             var badrequest= Assert.IsType<BadRequestObjectResult>(result);
             Assert.Equal(expectedException, badrequest.Value);
         }
-        
+        [Fact]
+        public async Task ValidateLogin_InvalidUser_ExceptionThrownWithErrorMessage()
+        {
+            // Arrange
+            var user = new LoginUser
+            {
+                UserName = "",
+                Password = "",
+            };
+            var existingUser = new AppUser { UserName = user.UserName, Password = user.Password };
+            _userServicesMock.Setup(service => service.Login(It.IsAny<LoginUser>()))
+                 .ThrowsAsync(new Exception("username should be filled, Password should be filled"));
+
+            // Act
+            var result = await _applicationUser.LoginUser(user);
+
+            // Assert
+            var badRequest = Assert.IsType<BadRequestObjectResult>(result);
+            Assert.Equal("username should be filled, Password should be filled", badRequest.Value);
+        }
+
         private LoginUser FakeLogin()
         {
             return new LoginUser

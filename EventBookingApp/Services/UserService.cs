@@ -14,6 +14,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
+using System.Linq;
 
 namespace EventBookingApp.Services
 {
@@ -83,21 +84,17 @@ namespace EventBookingApp.Services
             var token = tokenHandler.WriteToken(tokenObject);
             return token;
         }
-        private async Task ValidateRegistration([FromBody] UserRegistration user)
+        public async Task ValidateRegistration([FromBody] UserRegistration user)
         {
             var validator = new Registration();
             var valid = await validator.ValidateAsync(user);
-            var errorMessage = "";
             if (!valid.IsValid)
             {
-                foreach (var item in valid.Errors)
-                {
-                    errorMessage += item.ErrorMessage + " , ";
-                }
+                var errorMessage = string.Join(", ", valid.Errors.Select(e => e.ErrorMessage));
                 throw new System.Exception(errorMessage);
             }
         }
-        private async Task ValidateLogin([FromBody] LoginUser loginuser)
+        public async Task ValidateLogin([FromBody] LoginUser loginuser)
         {
             var validator = new LoginValidator();
             var valid = await validator.ValidateAsync(loginuser);

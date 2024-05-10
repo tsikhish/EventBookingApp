@@ -1,5 +1,7 @@
 ﻿using Domain.Post;
 using FluentValidation;
+using System;
+using System.Threading.Tasks;
 
 namespace EventBookingApp.Validations
 {
@@ -11,5 +13,7 @@ namespace EventBookingApp.Validations
             RuleFor(x => x.Password).NotEmpty().WithMessage("Password should be filled");
             RuleFor(x => x.UserName).NotEmpty().WithMessage("username should be filled");
         }
+
+        
     }
 }

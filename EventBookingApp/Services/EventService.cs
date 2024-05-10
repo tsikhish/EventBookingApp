@@ -33,14 +33,19 @@ namespace EventBookingApp.Services
             {
                 throw new System.Exception($"{existingEvent} already exists");
             }
+            var eventTime = await TimeOfEvent(createEventDto);
+            if (existingEvent.Location == createEventDto.Location && existingEvent.EventTime == eventTime)
+            {
+                throw new System.Exception($"Someone has already booked an event here");
+            }
             var newEvent = new CreateEvent
             {
                 EventName = createEventDto.EventName,
                 Location = createEventDto.Location,
                 MaxBooking = createEventDto.MaxBooking,
                 Created = DateTime.Now,
+                EventTime = eventTime
             };
-
             await _personContext.AddAsync(newEvent);
             await _personContext.SaveChangesAsync();
             if (createEventDto.MaxBooking > 0)
@@ -53,6 +58,7 @@ namespace EventBookingApp.Services
                         EventName = newEvent.EventName,
                         Count = 0,
                         MaxBooking = newEvent.MaxBooking,
+                        TimeOfEvent = eventTime
                     };
                     _personContext.Tickets.Add(availableTickets);
                 }
@@ -77,13 +83,24 @@ namespace EventBookingApp.Services
             var existingEvent = await _personContext.CreateEvent.FirstOrDefaultAsync(x => x.EventName == username);
             if (existingEvent == null)
                 throw new System.Exception($"{existingEvent} doesnt exists");
+            var eventTime = await TimeOfEvent(createEventDto);
             existingEvent.EventName = createEventDto.EventName;
             existingEvent.Location = createEventDto.Location;
             existingEvent.MaxBooking = createEventDto.MaxBooking;
+            existingEvent.EventTime = eventTime;
             existingEvent.Created = DateTime.Now;
             _personContext.Update(existingEvent);
             _personContext.SaveChanges();
             return existingEvent;
+        }
+        private static Task<DateTime> TimeOfEvent(CreateEventDto createEventDto)
+        {
+            int year = createEventDto.YearOfEvent;
+            int month = createEventDto.MonthOfEvent;
+            int day = createEventDto.DayOfEvent;
+            int hour = createEventDto.HoursOfEvent;
+            DateTime eventTime = new DateTime(year, month, day, hour, 0, 0);
+            return Task.FromResult(eventTime);
         }
         public async Task<CreateEvent> SearchEvent(string EventName)
         {

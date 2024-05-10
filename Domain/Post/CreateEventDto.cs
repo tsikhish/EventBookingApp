@@ -14,5 +14,6 @@ namespace Domain.Post
         public int DayOfEvent {  get; set; }
         public int MonthOfEvent {  get; set; }
         public int YearOfEvent { get; set; }    
+        public int HoursOfEvent { get; set; }
     }
 }
