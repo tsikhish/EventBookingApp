@@ -29,14 +29,13 @@ namespace EventBookingApp.Services
         {
             await ValidateEvent(createEventDto);
             var existingEvent = await _personContext.CreateEvent.FirstOrDefaultAsync(x => x.EventName == createEventDto.EventName);
+            var eventTime = await TimeOfEvent(createEventDto);
             if (existingEvent != null)
             {
-                throw new System.Exception($"{existingEvent} already exists");
-            }
-            var eventTime = await TimeOfEvent(createEventDto);
-            if (existingEvent.Location == createEventDto.Location && existingEvent.EventTime == eventTime)
-            {
-                throw new System.Exception($"Someone has already booked an event here");
+                if (existingEvent.Location == createEventDto.Location && existingEvent.EventTime == eventTime)
+                {
+                    throw new System.Exception($"Someone has already booked an event here");
+                }
             }
             var newEvent = new CreateEvent
             {
@@ -111,7 +110,7 @@ namespace EventBookingApp.Services
             }
             return existingEvent;
         }
-        private async Task ValidateEvent(CreateEventDto createEventDto)
+        public async Task ValidateEvent(CreateEventDto createEventDto)
         {
             var validator = new CreateEventValidator();
             var validationResult = await validator.ValidateAsync(createEventDto);

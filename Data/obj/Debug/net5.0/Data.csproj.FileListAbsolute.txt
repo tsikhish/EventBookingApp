@@ -10,10 +10,10 @@ C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\Data.GeneratedM
 C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\Data.AssemblyInfoInputs.cache
 C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\Data.AssemblyInfo.cs
 C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\Data.csproj.CoreCompileInputs.cache
-C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\Data.csproj.CopyComplete
 C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\Data.dll
 C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\refint\Data.dll
 C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\Data.pdb
 C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\Data.genruntimeconfig.cache
 C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\ref\Data.dll
 C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\Data.sourcelink.json
+C:\Users\Mari\source\repos\EventBookingApp\Data\obj\Debug\net5.0\Data.csproj.Up2Date
