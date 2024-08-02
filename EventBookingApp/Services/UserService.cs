@@ -15,6 +15,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using System.Linq;
+using EventBookingApp.Controllers;
+using SendGrid.Helpers.Mail;
 
 namespace EventBookingApp.Services
 {
@@ -22,6 +24,8 @@ namespace EventBookingApp.Services
     {
         public Task<AppUser> Register([FromBody] UserRegistration user);
         public Task<string> Login([FromBody] LoginUser loginUser);
+        Task<AppUser> GetUserByVerificationTokenAsync(string token);
+        Task UpdateUserAsync(AppUser user);
     }
 
     public class UserService : IUserServices
@@ -34,6 +38,16 @@ namespace EventBookingApp.Services
             _appsetting = appsetting.Value;
         }
 
+        public async Task UpdateUserAsync(AppUser user)
+        {
+            _personcontext.AppUser.Update(user);
+            await _personcontext.SaveChangesAsync();
+        }
+
+        public async Task<AppUser> GetUserByVerificationTokenAsync(string token)
+        {
+            return await _personcontext.AppUser.FirstOrDefaultAsync(u => u.VerificationToken == token);
+        }
         public async Task<AppUser> Register([FromBody] UserRegistration user)
         {
             await ValidateRegistration(user);
@@ -47,13 +61,13 @@ namespace EventBookingApp.Services
             {
                 UserName = user.UserName,
                 Password = hashedPassword,
+                Email = user.Email,
                 Role = user.Role,
             };
             await _personcontext.AppUser.AddAsync(newUser);
             await _personcontext.SaveChangesAsync();
             return newUser;
         }
-
         public async Task<string> Login([FromBody] LoginUser loginUser)
         {
             await ValidateLogin(loginUser);

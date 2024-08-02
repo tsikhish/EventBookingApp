@@ -23,7 +23,7 @@ namespace Domain.Post
             _logger.LogInformation($"Body: {message}");
 
             var client = new SendGridClient(_apiKey);
-            var from = new EmailAddress("your-email@example.com", "Your Name");
+            var from = new EmailAddress("tsikhishvilimariam@gmail.com", "Mariam");
             var to = new EmailAddress(toEmail);
             var msg = MailHelper.CreateSingleEmail(from, to, subject, message, message);
             var response = await client.SendEmailAsync(msg);

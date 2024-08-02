@@ -7,6 +7,7 @@ using EventBookingApp.Services;
 using EventBookingApp.Validations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Moq;
 using System;
@@ -21,16 +22,16 @@ namespace TestingEvent
     public class ApplicationUserTests
     {
         private readonly Mock<IUserServices> _userServicesMock;
-        private readonly Mock<PersonContext> _dbContextMock;
+        private readonly Mock<Email> _emailMock;
+        private readonly Mock<ILogger<ApplicationUser>> _loggerMock;
         private readonly ApplicationUser _applicationUser;
+
         public ApplicationUserTests()
         {
             _userServicesMock = new Mock<IUserServices>();
-            var dbContextOptions = new DbContextOptionsBuilder<PersonContext>()
-                        .UseInMemoryDatabase("LastEventBookingApp")
-                        .Options;
-            _dbContextMock = new Mock<PersonContext>(dbContextOptions);
-            _applicationUser = new ApplicationUser(_userServicesMock.Object, _dbContextMock.Object, Mock.Of<IOptions<AppSetting>>());
+            _emailMock = new Mock<Email>();
+            _loggerMock = new Mock<ILogger<ApplicationUser>>();
+            _applicationUser = new ApplicationUser(_emailMock.Object, _userServicesMock.Object, _loggerMock.Object);
         }
         [Fact]
         public async void Register_NewUser_ReturnsOk()

@@ -73,7 +73,6 @@ namespace EventBookingApp
             services.AddScoped<ITicketService,TicketsService>();
             services.AddLogging();
             services.AddSingleton<Email>();
-            services.AddLogging();
 
         }
 

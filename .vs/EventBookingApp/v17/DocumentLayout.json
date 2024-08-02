@@ -3,8 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\LoansController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Controllers\\LoansController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\domain\\post\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|solutionrelative:domain\\post\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\controllers\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\controllers\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B93DB2-9D34-4CB8-9CF1-0D5961026DC9}|TestingEvent\\TestingEvent.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\testingevent\\applicationusertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B93DB2-9D34-4CB8-9CF1-0D5961026DC9}|TestingEvent\\TestingEvent.csproj|solutionrelative:testingevent\\applicationusertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D7DD159-843D-4A35-B599-CFFCFF6877A5}|Data\\Data.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\data\\personcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D7DD159-843D-4A35-B599-CFFCFF6877A5}|Data\\Data.csproj|solutionrelative:data\\personcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\domain\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|solutionrelative:domain\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\domain\\post\\userregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|solutionrelative:domain\\post\\userregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\migrations\\20240802195945_emails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\migrations\\20240802195945_emails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\migrations\\20240801093645_lal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\migrations\\20240801093645_lal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\controllers\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\controllers\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\northwind-order-repository-adonet\\Northwind.Services.Ado\\Repositories\\OrderRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -25,148 +73,104 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\WebApp\\WebApp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Validations\\CreateEventValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Validations\\CreateEventValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\validations\\createeventvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\validations\\createeventvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\controllers\\tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\controllers\\tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\ApplicationUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Controllers\\ApplicationUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71B93DB2-9D34-4CB8-9CF1-0D5961026DC9}|TestingEvent\\TestingEvent.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\testingevent\\createeventtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B93DB2-9D34-4CB8-9CF1-0D5961026DC9}|TestingEvent\\TestingEvent.csproj|solutionrelative:testingevent\\createeventtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\Tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Controllers\\Tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\Email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Post\\Email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\services\\ticketsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\services\\ticketsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{71B93DB2-9D34-4CB8-9CF1-0D5961026DC9}|TestingEvent\\TestingEvent.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\testingevent\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B93DB2-9D34-4CB8-9CF1-0D5961026DC9}|TestingEvent\\TestingEvent.csproj|solutionrelative:testingevent\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\Event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Controllers\\Event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\domain\\post\\createeventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|solutionrelative:domain\\post\\createeventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\TestingEvent\\CreateEventTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestingEvent\\CreateEventTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\migrations\\20240511094316_testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\migrations\\20240511094316_testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Services\\EventService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Services\\EventService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\domain\\createevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|solutionrelative:domain\\createevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\validations\\ticketvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\validations\\ticketvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Services\\TicketsService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Services\\TicketsService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\validations\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\validations\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Services\\UserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Services\\UserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\validations\\loginvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\validations\\loginvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\TestingEvent\\ApplicationUserTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestingEvent\\ApplicationUserTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\domain\\post\\loginuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|solutionrelative:domain\\post\\loginuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\TestingEvent\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestingEvent\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\migrations\\20240509121349_event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\migrations\\20240509121349_event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\CreateEventDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Post\\CreateEventDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Migrations\\20240511094316_testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Migrations\\20240511094316_testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\domain\\tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|solutionrelative:domain\\tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\CreateEvent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\CreateEvent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\migrations\\20240424090832_blabal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\migrations\\20240424090832_blabal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Validations\\TicketValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Validations\\TicketValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Validations\\Registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Validations\\Registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71B93DB2-9D34-4CB8-9CF1-0D5961026DC9}|TestingEvent\\TestingEvent.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\testingevent\\testingevent.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{71B93DB2-9D34-4CB8-9CF1-0D5961026DC9}|TestingEvent\\TestingEvent.csproj|solutionrelative:testingevent\\testingevent.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Validations\\LoginValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Validations\\LoginValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\migrations\\20240418101355_lasteventbookingapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\migrations\\20240418101355_lasteventbookingapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\LoginUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Post\\LoginUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\nlog.config||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\nlog.config||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Migrations\\20240509121349_event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Migrations\\20240509121349_event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\appsettings\\appsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\appsettings\\appsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\migrations\\20240413163139_finalevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\migrations\\20240413163139_finalevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\domain\\post\\ticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8294CCF0-7365-4293-937B-53CB033678CB}|Domain\\Domain.csproj|solutionrelative:domain\\post\\ticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Migrations\\20240424090832_blabal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Migrations\\20240424090832_blabal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\AppUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\AppUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Data\\PersonContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\PersonContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\UserRegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Post\\UserRegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\TestingEvent\\TestingEvent.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestingEvent\\TestingEvent.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Migrations\\20240418101355_LastEventBookingApp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Migrations\\20240418101355_LastEventBookingApp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\nlog.config||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\nlog.config||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\AppSettings\\AppSetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\AppSettings\\AppSetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Migrations\\20240413163139_FinalEvent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\Migrations\\20240413163139_FinalEvent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\TicketDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Domain\\Post\\TicketDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\EventBookingApp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EventBookingApp\\EventBookingApp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|c:\\users\\mari\\source\\repos\\eventbookingapp\\eventbookingapp\\eventbookingapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C6F8796C-ED52-46BB-BC4B-4A1C6E14B3C8}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\eventbookingapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -175,25 +179,185 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 327,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 233,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoansController.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\LoansController.cs",
-              "RelativeDocumentMoniker": "EventBookingApp\\Controllers\\LoansController.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\LoansController.cs",
-              "RelativeToolTip": "EventBookingApp\\Controllers\\LoansController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAADwvxoAAAA5AAAA",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Services\\UserService.cs",
+              "RelativeToolTip": "EventBookingApp\\Services\\UserService.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEwAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T14:27:27.248Z",
+              "WhenOpened": "2024-04-07T14:23:39.888Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "UserRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\UserRegistration.cs",
+              "RelativeDocumentMoniker": "Domain\\Post\\UserRegistration.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\UserRegistration.cs",
+              "RelativeToolTip": "Domain\\Post\\UserRegistration.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwBMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T10:25:58.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonContext.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Data\\PersonContext.cs",
+              "RelativeDocumentMoniker": "Data\\PersonContext.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Data\\PersonContext.cs",
+              "RelativeToolTip": "Data\\PersonContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T08:27:20.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\appsettings.json",
+              "RelativeDocumentMoniker": "EventBookingApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\appsettings.json",
+              "RelativeToolTip": "EventBookingApp\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-04T08:25:30.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationUserTests.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\TestingEvent\\ApplicationUserTests.cs",
+              "RelativeDocumentMoniker": "TestingEvent\\ApplicationUserTests.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\TestingEvent\\ApplicationUserTests.cs",
+              "RelativeToolTip": "TestingEvent\\ApplicationUserTests.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAcwIMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T21:35:24.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Controllers\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\ApplicationUser.cs",
+              "RelativeToolTip": "EventBookingApp\\Controllers\\ApplicationUser.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAUwCwAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T08:53:49.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Email.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\Email.cs",
+              "RelativeDocumentMoniker": "Domain\\Post\\Email.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\Email.cs",
+              "RelativeToolTip": "Domain\\Post\\Email.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAkwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T13:44:06.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20240802195945_Emails.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Migrations\\20240802195945_Emails.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Migrations\\20240802195945_Emails.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Migrations\\20240802195945_Emails.cs",
+              "RelativeToolTip": "EventBookingApp\\Migrations\\20240802195945_Emails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T19:59:46.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\AppUser.cs",
+              "RelativeDocumentMoniker": "Domain\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\AppUser.cs",
+              "RelativeToolTip": "Domain\\AppUser.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T08:45:39.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EventService.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Services\\EventService.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Services\\EventService.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Services\\EventService.cs",
+              "RelativeToolTip": "EventBookingApp\\Services\\EventService.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAA2wBAAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T13:19:23.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240801093645_lal.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Migrations\\20240801093645_lal.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Migrations\\20240801093645_lal.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Migrations\\20240801093645_lal.cs",
+              "RelativeToolTip": "EventBookingApp\\Migrations\\20240801093645_lal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T09:36:47.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\Event.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Controllers\\Event.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\Event.cs",
+              "RelativeToolTip": "EventBookingApp\\Controllers\\Event.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAuwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T15:07:42.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Startup.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Startup.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Startup.cs",
+              "RelativeToolTip": "EventBookingApp\\Startup.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAuwEoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T08:27:00.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "CreateEventValidator.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Validations\\CreateEventValidator.cs",
               "RelativeDocumentMoniker": "EventBookingApp\\Validations\\CreateEventValidator.cs",
@@ -205,31 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Startup.cs",
-              "RelativeDocumentMoniker": "EventBookingApp\\Startup.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Startup.cs",
-              "RelativeToolTip": "EventBookingApp\\Startup.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAQwFUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T08:27:00.97Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "EventBookingApp\\Controllers\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\ApplicationUser.cs",
-              "RelativeToolTip": "EventBookingApp\\Controllers\\ApplicationUser.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAwBMAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T08:53:49.181Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "Tickets.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\Tickets.cs",
               "RelativeDocumentMoniker": "EventBookingApp\\Controllers\\Tickets.cs",
@@ -241,43 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Email.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\Email.cs",
-              "RelativeDocumentMoniker": "Domain\\Post\\Email.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\Email.cs",
-              "RelativeToolTip": "Domain\\Post\\Email.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAswCYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T13:44:06.447Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\appsettings.json",
-              "RelativeDocumentMoniker": "EventBookingApp\\appsettings.json",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\appsettings.json",
-              "RelativeToolTip": "EventBookingApp\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-04T08:25:30.542Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Event.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\Event.cs",
-              "RelativeDocumentMoniker": "EventBookingApp\\Controllers\\Event.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\Event.cs",
-              "RelativeToolTip": "EventBookingApp\\Controllers\\Event.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAQwEwAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T15:07:42.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "CreateEventTests.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\TestingEvent\\CreateEventTests.cs",
               "RelativeDocumentMoniker": "TestingEvent\\CreateEventTests.cs",
@@ -289,19 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EventService.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Services\\EventService.cs",
-              "RelativeDocumentMoniker": "EventBookingApp\\Services\\EventService.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Services\\EventService.cs",
-              "RelativeToolTip": "EventBookingApp\\Services\\EventService.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAIwBAAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T13:19:23.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Program.cs",
               "RelativeDocumentMoniker": "EventBookingApp\\Program.cs",
@@ -313,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "TicketsService.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Services\\TicketsService.cs",
               "RelativeDocumentMoniker": "EventBookingApp\\Services\\TicketsService.cs",
@@ -325,31 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "EventBookingApp\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Services\\UserService.cs",
-              "RelativeToolTip": "EventBookingApp\\Services\\UserService.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAcwC0AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T14:23:39.888Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ApplicationUserTests.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\TestingEvent\\ApplicationUserTests.cs",
-              "RelativeDocumentMoniker": "TestingEvent\\ApplicationUserTests.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\TestingEvent\\ApplicationUserTests.cs",
-              "RelativeToolTip": "TestingEvent\\ApplicationUserTests.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAqwGwAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T21:35:24.57Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\TestingEvent\\UnitTest1.cs",
               "RelativeDocumentMoniker": "TestingEvent\\UnitTest1.cs",
@@ -361,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\northwind-order-repository-adonet\\Northwind.Services.Ado\\Repositories\\OrderRepository.cs",
               "RelativeDocumentMoniker": "..\\northwind-order-repository-adonet\\Northwind.Services.Ado\\Repositories\\OrderRepository.cs",
@@ -373,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "CreateEventDto.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\CreateEventDto.cs",
               "RelativeDocumentMoniker": "Domain\\Post\\CreateEventDto.cs",
@@ -385,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "20240511094316_testing.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Migrations\\20240511094316_testing.cs",
               "RelativeDocumentMoniker": "EventBookingApp\\Migrations\\20240511094316_testing.cs",
@@ -397,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "CreateEvent.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\CreateEvent.cs",
               "RelativeDocumentMoniker": "Domain\\CreateEvent.cs",
@@ -409,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "TicketValidator.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Validations\\TicketValidator.cs",
               "RelativeDocumentMoniker": "EventBookingApp\\Validations\\TicketValidator.cs",
@@ -421,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "Registration.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Validations\\Registration.cs",
               "RelativeDocumentMoniker": "EventBookingApp\\Validations\\Registration.cs",
@@ -433,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "LoginValidator.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Validations\\LoginValidator.cs",
               "RelativeDocumentMoniker": "EventBookingApp\\Validations\\LoginValidator.cs",
@@ -445,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "LoginUser.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\LoginUser.cs",
               "RelativeDocumentMoniker": "Domain\\Post\\LoginUser.cs",
@@ -457,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\WebApp\\WebApp\\appsettings.json",
               "RelativeDocumentMoniker": "..\\WebApp\\WebApp\\appsettings.json",
@@ -469,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "WebApp.csproj",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\WebApp\\WebApp\\WebApp.csproj",
               "RelativeDocumentMoniker": "..\\WebApp\\WebApp\\WebApp.csproj",
@@ -481,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "20240509121349_event.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Migrations\\20240509121349_event.cs",
               "RelativeDocumentMoniker": "EventBookingApp\\Migrations\\20240509121349_event.cs",
@@ -493,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
               "Title": "UserControllerTest.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\Final\\TestingFinalProject\\UserControllerTest.cs",
               "RelativeDocumentMoniker": "..\\Final\\TestingFinalProject\\UserControllerTest.cs",
@@ -505,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\WebApp\\WebApp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "..\\WebApp\\WebApp\\Controllers\\HomeController.cs",
@@ -517,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "nlog.config",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\WebApp\\WebApp\\nlog.config",
               "RelativeDocumentMoniker": "..\\WebApp\\WebApp\\nlog.config",
@@ -529,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "nlog.config",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\nlog.config",
               "RelativeDocumentMoniker": "EventBookingApp\\nlog.config",
@@ -541,7 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "Tickets.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Tickets.cs",
               "RelativeDocumentMoniker": "Domain\\Tickets.cs",
@@ -553,7 +621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "20240424090832_blabal.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Migrations\\20240424090832_blabal.cs",
               "RelativeDocumentMoniker": "EventBookingApp\\Migrations\\20240424090832_blabal.cs",
@@ -565,19 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\AppUser.cs",
-              "RelativeDocumentMoniker": "Domain\\AppUser.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\AppUser.cs",
-              "RelativeToolTip": "Domain\\AppUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T08:45:39.378Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "EventBookingApp\\Controllers\\WeatherForecastController.cs",
@@ -589,31 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "PersonContext.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Data\\PersonContext.cs",
-              "RelativeDocumentMoniker": "Data\\PersonContext.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Data\\PersonContext.cs",
-              "RelativeToolTip": "Data\\PersonContext.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAIBQwBIAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T08:27:20.5Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "UserRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\UserRegistration.cs",
-              "RelativeDocumentMoniker": "Domain\\Post\\UserRegistration.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\UserRegistration.cs",
-              "RelativeToolTip": "Domain\\Post\\UserRegistration.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAgAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T10:25:58.227Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "TestingEvent.csproj",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\TestingEvent\\TestingEvent.csproj",
               "RelativeDocumentMoniker": "TestingEvent\\TestingEvent.csproj",
@@ -625,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "20240418101355_LastEventBookingApp.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Migrations\\20240418101355_LastEventBookingApp.cs",
               "RelativeDocumentMoniker": "EventBookingApp\\Migrations\\20240418101355_LastEventBookingApp.cs",
@@ -637,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "nlog.config",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\nlog.config",
               "RelativeDocumentMoniker": "EventBookingApp\\nlog.config",
@@ -649,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "AppSetting.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\AppSettings\\AppSetting.cs",
               "RelativeDocumentMoniker": "EventBookingApp\\AppSettings\\AppSetting.cs",
@@ -661,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "20240413163139_FinalEvent.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\Migrations\\20240413163139_FinalEvent.cs",
               "RelativeDocumentMoniker": "EventBookingApp\\Migrations\\20240413163139_FinalEvent.cs",
@@ -673,7 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "TicketDto.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\Domain\\Post\\TicketDto.cs",
               "RelativeDocumentMoniker": "Domain\\Post\\TicketDto.cs",
@@ -685,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "EventBookingApp.csproj",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\EventBookingApp\\EventBookingApp\\EventBookingApp.csproj",
               "RelativeDocumentMoniker": "EventBookingApp\\EventBookingApp.csproj",
@@ -694,10 +726,6 @@
               "ViewState": "AQIAAAgAAAAAAAAAAABRwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-04-08T10:29:46.059Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
