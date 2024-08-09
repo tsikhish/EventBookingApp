@@ -10,6 +10,8 @@ namespace EventBookingApp.Validations
             RuleFor(x=>x.EventName).NotEmpty().WithMessage("EventName should be filled");
             RuleFor(x => x.MaxBooking).NotEmpty().GreaterThan(0).WithMessage("MaxBooking should be filled and greater than 0");
             RuleFor(x => x.Location).NotEmpty().WithMessage("Location should be filled");
+            RuleFor(x => x.HoursOfEvent).NotEmpty().WithMessage("Hours should be filled").GreaterThanOrEqualTo(0).LessThan(24).WithMessage("Hours should be from 0 to 24");
+
         }
     }
 }

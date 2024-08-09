@@ -4,8 +4,10 @@ using Domain.Post;
 using EventBookingApp.AppSettings;
 using EventBookingApp.Controllers;
 using EventBookingApp.Services;
+using EventBookingApp.Validations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Moq;
 using System;
@@ -20,19 +22,19 @@ namespace TestingEvent
     public class ApplicationUserTests
     {
         private readonly Mock<IUserServices> _userServicesMock;
-        private readonly Mock<PersonContext> _dbContextMock;
+        private readonly Mock<Email> _emailMock;
+        private readonly Mock<ILogger<ApplicationUser>> _loggerMock;
         private readonly ApplicationUser _applicationUser;
+
         public ApplicationUserTests()
         {
             _userServicesMock = new Mock<IUserServices>();
-            var dbContextOptions = new DbContextOptionsBuilder<PersonContext>()
-                        .UseInMemoryDatabase("LastEventBookingApp")
-                        .Options;
-            _dbContextMock = new Mock<PersonContext>(dbContextOptions);
-            _applicationUser = new ApplicationUser(_userServicesMock.Object, _dbContextMock.Object, Mock.Of<IOptions<AppSetting>>());
+            _emailMock = new Mock<Email>();
+            _loggerMock = new Mock<ILogger<ApplicationUser>>();
+            _applicationUser = new ApplicationUser(_emailMock.Object, _userServicesMock.Object, _loggerMock.Object);
         }
         [Fact]
-        public async void RegisterPerson_ReturnsOk()
+        public async void Register_NewUser_ReturnsOk()
         {
             //Arrange
             var registerPerson = FakeUser();
@@ -58,6 +60,29 @@ namespace TestingEvent
             Assert.Equal("Already exists.", badRequest.Value);
         }
         [Fact]
+        public async Task ValidateRegistration_InvalidUser_ExceptionThrownWithErrorMessage()
+        {
+            // Arrange
+            var user = new UserRegistration
+            {
+                UserName = "",
+                Password = "",
+                Role = ""
+            };
+            var existingUser = new AppUser { UserName = user.UserName, Password = user.Password, Role = user.Role };
+            _userServicesMock.Setup(service => service.Register(It.IsAny<UserRegistration>()))
+                 .ThrowsAsync(new Exception("username should be filled, Password should be filled, Rule should be filled"));
+
+            // Act
+            var result = await _applicationUser.RegisterUser(FakeUser());
+
+            // Assert
+            var badRequest = Assert.IsType<BadRequestObjectResult>(result);
+            Assert.Equal("username should be filled, Password should be filled, Rule should be filled", badRequest.Value);
+        }
+    
+    
+    [Fact]
         public async void LoginExistingPerson_ReturnsOk()
         {
             //Arrange
@@ -84,12 +109,32 @@ namespace TestingEvent
             var badrequest= Assert.IsType<BadRequestObjectResult>(result);
             Assert.Equal(expectedException, badrequest.Value);
         }
-        
+        [Fact]
+        public async Task ValidateLogin_InvalidUser_ExceptionThrownWithErrorMessage()
+        {
+            // Arrange
+            var user = new LoginUser
+            {
+                UserNameOrEmail = "",
+                Password = "",
+            };
+            var existingUser = new AppUser { UserName = user.UserNameOrEmail, Password = user.Password };
+            _userServicesMock.Setup(service => service.Login(It.IsAny<LoginUser>()))
+                 .ThrowsAsync(new Exception("username should be filled, Password should be filled"));
+
+            // Act
+            var result = await _applicationUser.LoginUser(user);
+
+            // Assert
+            var badRequest = Assert.IsType<BadRequestObjectResult>(result);
+            Assert.Equal("username should be filled, Password should be filled", badRequest.Value);
+        }
+
         private LoginUser FakeLogin()
         {
             return new LoginUser
             {
-                UserName = "tsikhish",
+                UserNameOrEmail = "tsikhish",
                 Password = "tsikhish",
             };  
         }

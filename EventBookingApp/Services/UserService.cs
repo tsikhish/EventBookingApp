@@ -8,12 +8,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Collections.Generic;
 using System;
-using System.ComponentModel.DataAnnotations;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
+using System.Linq;
 
 namespace EventBookingApp.Services
 {
@@ -21,6 +21,10 @@ namespace EventBookingApp.Services
     {
         public Task<AppUser> Register([FromBody] UserRegistration user);
         public Task<string> Login([FromBody] LoginUser loginUser);
+        Task<AppUser> GetUserByVerificationTokenAsync(string token);
+        Task UpdateUserAsync(AppUser user);
+        Task<AppUser> GetUserByEmailAsync(string email);
+
     }
 
     public class UserService : IUserServices
@@ -32,7 +36,22 @@ namespace EventBookingApp.Services
             _personcontext = personcontext;
             _appsetting = appsetting.Value;
         }
+        public async Task<AppUser> GetUserByEmailAsync(string email)
+        {
+            return await _personcontext.AppUser.SingleOrDefaultAsync(u => u.Email == email);
+        }
 
+        public async Task UpdateUserAsync(AppUser user)
+        {
+            _personcontext.AppUser.Update(user);
+            await _personcontext.SaveChangesAsync();
+        }
+
+
+        public async Task<AppUser> GetUserByVerificationTokenAsync(string token)
+        {
+            return await _personcontext.AppUser.FirstOrDefaultAsync(u => u.VerificationToken == token);
+        }
         public async Task<AppUser> Register([FromBody] UserRegistration user)
         {
             await ValidateRegistration(user);
@@ -46,32 +65,81 @@ namespace EventBookingApp.Services
             {
                 UserName = user.UserName,
                 Password = hashedPassword,
+                Email = user.Email,
                 Role = user.Role,
             };
             await _personcontext.AppUser.AddAsync(newUser);
             await _personcontext.SaveChangesAsync();
             return newUser;
         }
-
         public async Task<string> Login([FromBody] LoginUser loginUser)
         {
             await ValidateLogin(loginUser);
             var token = await GenerateToken(loginUser);
             return token;
         }
-        private async Task<string> GenerateToken([FromBody] LoginUser loginuser)
+        private async Task<string> GenerateToken([FromBody] LoginUser loginUser)
         {
-            var existingPerson = await _personcontext.AppUser.FirstOrDefaultAsync(x => x.UserName == loginuser.UserName);
-            if (existingPerson == null || !BCrypt.Net.BCrypt.Verify(loginuser.Password, existingPerson.Password))
+            AppUser appUser = null;
+            bool isEmail = IsEmailFormat(loginUser.UserNameOrEmail);
+            if (isEmail)
             {
-                throw new SystemException($"Your Account doesnt exists or Password is not correct, please check it");
+                appUser = await _personcontext.AppUser.FirstOrDefaultAsync(x => x.Email == loginUser.UserNameOrEmail);
             }
-
+            else
+            {
+                appUser = await _personcontext.AppUser.FirstOrDefaultAsync(x => x.UserName == loginUser.UserNameOrEmail);
+            }
+            if (appUser == null || !BCrypt.Net.BCrypt.Verify(loginUser.Password, appUser.Password))
+            {
+                throw new Exception("Your account doesn't exist or the password is incorrect, please check it.");
+            }
+            return GenerateToken(appUser);
+        }
+        public async Task ValidateRegistration([FromBody] UserRegistration user)
+        {
+            var validator = new Registration();
+            var valid = await validator.ValidateAsync(user);
+            if (!valid.IsValid)
+            {
+                var errorMessage = string.Join(", ", valid.Errors.Select(e => e.ErrorMessage));
+                throw new System.Exception(errorMessage);
+            }
+        }
+        
+        public async Task ValidateLogin([FromBody] LoginUser loginuser)
+        {
+            var validator = new LoginValidator();
+            var valid = await validator.ValidateAsync(loginuser);
+            var errorMessage = "";
+            if (!valid.IsValid)
+            {   
+                foreach (var item in valid.Errors)
+                {
+                    errorMessage += item.ErrorMessage + " , ";
+                }
+                throw new System.Exception(errorMessage);
+            }
+        }
+        private bool IsEmailFormat(string input)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(input);
+                return addr.Address == input;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        private string GenerateToken(AppUser appUser)
+        {
             var authClaims = new List<Claim>()
             {
-               new Claim(ClaimTypes.NameIdentifier, existingPerson.Id.ToString()),
-               new Claim(ClaimTypes.Name,existingPerson.UserName),
-               new Claim(ClaimTypes.Role, existingPerson.Role),
+               new Claim(ClaimTypes.NameIdentifier, appUser.Id.ToString()),
+               new Claim(ClaimTypes.Name,appUser.UserName),
+               new Claim(ClaimTypes.Role, appUser.Role),
             };
             var key = Encoding.ASCII.GetBytes(_appsetting.Secret);
             var authSecret = new SymmetricSecurityKey(key);
@@ -80,38 +148,8 @@ namespace EventBookingApp.Services
                 claims: authClaims,
                 signingCredentials: new SigningCredentials(authSecret, SecurityAlgorithms.HmacSha256));
             var tokenHandler = new JwtSecurityTokenHandler();
-            var token = tokenHandler.WriteToken(tokenObject);
-            return token;
+            return tokenHandler.WriteToken(tokenObject);
         }
-        private async Task ValidateRegistration([FromBody] UserRegistration user)
-        {
-            var validator = new Registration();
-            var valid = await validator.ValidateAsync(user);
-            var errorMessage = "";
-            if (!valid.IsValid)
-            {
-                foreach (var item in valid.Errors)
-                {
-                    errorMessage += item.ErrorMessage + " , ";
-                }
-                throw new System.Exception(errorMessage);
-            }
-        }
-        private async Task ValidateLogin([FromBody] LoginUser loginuser)
-        {
-            var validator = new LoginValidator();
-            var valid = await validator.ValidateAsync(loginuser);
-            var errorMessage = "";
-            if (!valid.IsValid)
-            {
-                foreach (var item in valid.Errors)
-                {
-                    errorMessage += item.ErrorMessage + " , ";
-                }
-                throw new System.Exception(errorMessage);
-            }
-        }
-
     }
 }
 

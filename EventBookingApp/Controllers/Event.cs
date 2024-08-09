@@ -39,7 +39,7 @@ namespace EventBookingApp.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while processing the request for event creation.");
-                return BadRequest("An error occurred while processing your request. Please try again later.");
+                return BadRequest(ex.Message);  
             }
         }
         [Authorize(Roles = Domain.Role.Accountant)]
@@ -54,7 +54,7 @@ namespace EventBookingApp.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while processing the request for deleting event.");
-                return BadRequest("An error occurred while processing your request. Please try again later.");
+                return BadRequest(ex.Message);
             }
         }
         [Authorize(Roles = Domain.Role.Accountant)]
@@ -70,8 +70,7 @@ namespace EventBookingApp.Controllers
             catch(Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while processing the request for updating event.");
-                return BadRequest("An error occurred while processing your request. Please try again later.");
-
+                return BadRequest(ex.Message);
             }
         }
         [AllowAnonymous]
@@ -86,8 +85,7 @@ namespace EventBookingApp.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while processing the request for searching event.");
-                return BadRequest("An error occurred while processing your request. Please try again later.");
-
+                return BadRequest(ex.Message);
             }
         }
     }

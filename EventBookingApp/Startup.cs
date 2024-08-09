@@ -1,4 +1,5 @@
 using Data;
+using Domain.Post;
 using EventBookingApp.AppSettings;
 using EventBookingApp.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -71,6 +72,7 @@ namespace EventBookingApp
             services.AddScoped<IEventService, EventService>();  
             services.AddScoped<ITicketService,TicketsService>();
             services.AddLogging();
+            services.AddSingleton<Email>();
 
         }
 
@@ -79,6 +81,7 @@ namespace EventBookingApp
         {
             if (env.IsDevelopment())
             {
+                app.UseDeveloperExceptionPage();
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "EventBookingApp v1"));

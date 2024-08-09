@@ -7,7 +7,7 @@ namespace EventBookingApp.Validations
     {
         public LoginValidator()
         {
-            RuleFor(x=>x.UserName).NotEmpty().WithMessage("Username should be filled");
+            RuleFor(x=>x.UserNameOrEmail).NotEmpty().WithMessage("Username should be filled");
             RuleFor(x => x.Password).NotEmpty().WithMessage("password should be filled");
         }
     }
