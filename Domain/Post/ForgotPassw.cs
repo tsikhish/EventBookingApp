@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Post
 {
-    public class LoginUser
+    public class ForgotPassw
     {
-        public string UserNameOrEmail { get; set;}
-        public string Password { get; set;}
+        public string Email {  get; set; }
     }
 }

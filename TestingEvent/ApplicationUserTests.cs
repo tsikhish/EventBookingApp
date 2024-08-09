@@ -115,10 +115,10 @@ namespace TestingEvent
             // Arrange
             var user = new LoginUser
             {
-                UserName = "",
+                UserNameOrEmail = "",
                 Password = "",
             };
-            var existingUser = new AppUser { UserName = user.UserName, Password = user.Password };
+            var existingUser = new AppUser { UserName = user.UserNameOrEmail, Password = user.Password };
             _userServicesMock.Setup(service => service.Login(It.IsAny<LoginUser>()))
                  .ThrowsAsync(new Exception("username should be filled, Password should be filled"));
 
@@ -134,7 +134,7 @@ namespace TestingEvent
         {
             return new LoginUser
             {
-                UserName = "tsikhish",
+                UserNameOrEmail = "tsikhish",
                 Password = "tsikhish",
             };  
         }

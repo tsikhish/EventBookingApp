@@ -2,6 +2,7 @@
 using Domain;
 using Domain.Post;
 using EventBookingApp.AppSettings;
+using EventBookingApp.Migrations;
 using EventBookingApp.Services;
 using EventBookingApp.Validations;
 using Microsoft.AspNetCore.Mvc;
@@ -9,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using SendGrid.Helpers.Mail;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -86,6 +88,53 @@ namespace EventBookingApp.Controllers
                 return BadRequest($"{ex.Message}");
             }
         }
+        [HttpPost("/user/forgotPassword")]
+        public async Task<IActionResult> ForgotPassword([FromBody] ForgotPassw request)
+        {
+            var user = await _userservice.GetUserByEmailAsync(request.Email);
+            if(user == null)
+            {
+                return BadRequest("User not found.");
+            }
+            user.PasswordResetToken = Guid.NewGuid().ToString();
+            user.ResetTokenExpiration = DateTime.UtcNow.AddHours(1);
 
+            await _userservice.UpdateUserAsync(user);
+            var resetLink = Url.Action(nameof(ResetPassword), "Request", new { token = user.PasswordResetToken }, Request.Scheme);
+            var subject = "Password Reset Request";
+            var body = $"<p>Please reset your password by clicking <a href=\"{resetLink}\">here</a>. The link is valid for 1 hour.</p>";
+            await _email.SendEmailAsync(user.Email, subject, body);
+
+            return Ok("Password reset link has been sent to your email.");
+        }
+        [HttpPost("/user/resetPassword")]
+        public async Task<IActionResult> ResetPassword([FromBody] Domain.Post.ResetPassword resetPassword)
+        {
+            _logger.LogInformation("Attempting to send password reset email to {Email}", user.Email);
+
+            try
+            {
+                var user =await _userservice.GetUserByVerificationTokenAsync(resetPassword.Token);
+                if (user == null || user.ResetTokenExpiration < DateTime.UtcNow)
+                {
+                    return BadRequest("Invalid or expired token.");
+                }
+                if (resetPassword.NewPassword != resetPassword.ConfirmedPassword)
+                {
+                    return BadRequest("New password and confirmed password do not match.");
+                }
+                user.Password = BCrypt.Net.BCrypt.HashPassword(resetPassword.NewPassword);
+                user.PasswordResetToken = null;
+                user.ResetTokenExpiration = null;
+                await _userservice.UpdateUserAsync(user);
+                _logger.LogInformation("Password reset email sent successfully.");
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error sending password reset email.");
+
+            }
+        }
     }
 }
